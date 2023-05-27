@@ -84,7 +84,7 @@
 {/if}
 {#if isLoggedIn}
   <my-filetree-web-component name={username} tree_data={fileStructureData} update_files_structure={updateFileStructure} />
-  <script>
+  <!-- <script>
     System.import('https://frolicking-ganache-207e77.netlify.app/basic-web-comp.js')
       .then(() => {
         // The web component has been loaded and registered
@@ -93,7 +93,7 @@
       .catch((error) => {
         console.error('Error loading web component:', error);
       });
-  </script>
+  </script> -->
 {/if}
 
 <style>
