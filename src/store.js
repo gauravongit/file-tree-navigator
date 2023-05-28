@@ -2,12 +2,12 @@
 import { writable } from 'svelte/store';
 
 export const fileStructure = writable({
-  data: 'Root',
+  name: 'Root',
   type: 'Folder',
   expanded: false,
   children: []
 });
 
-export const updateFileStructure = (newStructure) => {
+export const updateFileStructure = newStructure => {
   fileStructure.set(newStructure);
 };

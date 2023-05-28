@@ -9,20 +9,24 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/assets/js/basic-web-comp.js"></script>
+    <script type="module" src="/src/lib/js/basic-web-comp.js"></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      padding: 0px !important;
+      background-image: url('./src/assets/backdrop.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0px !important;
+    }
+    #app {
+      height: 100%;
+      padding-top: 20px;
+      background-color: rgba(0,0,0,0.75);
+    }
+  </style>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Svelte Tailwind App</title>
-    <link rel="stylesheet" href="/src/styles/index.css" />
-    <script type="module" src="/src/main.ts"></script>
-  </head>
-  <body>
-  </body>
-</html> -->
