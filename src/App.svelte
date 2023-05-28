@@ -7,10 +7,12 @@
   let isLoggedIn = false;
   let fileStructureData; // Declare a reactive variable
 
+  /* fetch data from store */
   $: {
     fileStructureData = $fileStructure;
   }
 
+  /* check if the user is logged in */
   onMount(function () {
     const FileTreeAppUser = localStorage.getItem('FileTreeAppUser');
     if (FileTreeAppUser) {
@@ -21,7 +23,7 @@
 
   function onLogout() {
     isLoggedIn = false;
-    localStorage.setItem('FileTreeAppUser', null);
+    localStorage.setItem('FileTreeAppUser', '');
   }
 
   function handleSubmit() {
