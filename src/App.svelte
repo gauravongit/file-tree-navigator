@@ -34,7 +34,7 @@
 
 {#if !isLoggedIn}
   <div class="form-container">
-    <h2 class="form-title">{'Filetree Navigator App'}</h2>
+    <h2 class="form-title">{'File Tree Navigator App'}</h2>
     <p class="welcome-text" />
 
     <form on:submit|preventDefault={handleSubmit}>
@@ -88,6 +88,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    animation: loadingAnimation 0.5s ease-in;
   }
   .form-title {
     font-size: 1.5rem;
@@ -114,9 +115,10 @@
     color: #4a5568;
   }
   .form-submit-btn {
-    background-color: #4c51bf;
+    background-color: #ffca28;
     color: #ffffff;
     padding: 0.75rem;
+    margin-top: 5%;
     border-radius: 0.25rem;
     border: none;
     cursor: pointer;
@@ -125,7 +127,7 @@
     font-family: circular;
   }
   .form-submit-btn:hover {
-    background-color: #4338ca;
+    background-color: #e4b81c;
   }
   .welcome-text {
     margin-bottom: 1.5rem;
@@ -134,4 +136,21 @@
     font-weight: 500;
     text-align: center;
   }
+    @keyframes loadingAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px) rotate(-5deg);
+      }
+      50% {
+        transform: translateX(5px) rotate(5deg);
+      }
+      75% {
+        transform: translateX(-5px) rotate(-5deg);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
 </style>
