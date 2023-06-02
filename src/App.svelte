@@ -5,9 +5,8 @@
   let username = '';
   let password = '';
   let isLoggedIn = false;
-  let fileStructureData; // Declare a reactive variable
+  let fileStructureData; 
 
-  /* fetch data from store */
   $: {
     fileStructureData = $fileStructure;
   }
