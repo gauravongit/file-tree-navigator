@@ -24,7 +24,7 @@ Enter any name and password to login
 
 ## Web component location
 
-Web component JS is placed inside src/lib/js
+Web component JS is placed inside src/lib/
 System JS was not used because of CORS error
 
 
