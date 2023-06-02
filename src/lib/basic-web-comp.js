@@ -1461,7 +1461,7 @@ function Kt(t) {
   let e;
   return {
     c() {
-      e = v("div"), e.innerHTML = '<img class="empty-state" src="../../public/empty_state.jpg" alt="empty"/>', c(e, "class", "empty-state-container");
+      e = v("div"), e.innerHTML = '<img class="empty-state" src="./empty_state.jpg" alt="empty"/>', c(e, "class", "empty-state-container");
     },
     m(n, l) {
       k(n, e, l);
