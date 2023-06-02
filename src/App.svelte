@@ -22,6 +22,7 @@
 
   function onLogout() {
     isLoggedIn = false;
+    updateFileStructure([])
     localStorage.setItem('FileTreeAppUser', '');
   }
 
